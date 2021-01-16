@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Set icon for the site -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/utilities.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <title>EdgeLeder Financial | Accountinf & Investment</title>
+</head>
+<body id="home">
+  <header class="hero">
+    <nav id="navbar" class="navbar">
+      <h1 class="logo">
+        <span class="text-primary">
+          <i class="fas fa-book-open"></i>Edge</span>Ledger
+      </h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#what">What</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  
+<!-- Header: Showcase -->
+<header id="showcase">
+  <div class="showcase-content">
+    <h1 class="l-heading">
+      The Sky is The Limit
+    </h1>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque sapiente est beatae, ullam laudantium.
+    </p>
+    <a href="#what" class="btn">Read more</a>
+  </div>
+</header>
+
+<!-- Section: what we do -->
+  <section id="what" class="bg-light py-1">
+    <div class="container">
+      <h2 class="m-heading text-center"><span class="text-primary">What</span> We do</h2>
+      <div class="items">
+        <div class="item">
+          <i class="fas fa-university fa-2x"></i>
+          <div>
+            <h3>Investment Banking</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vero.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-book-reader fa-2x"></i>
+          <div>
+            <h3>Portfolio Management</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vero.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div>
+            <h3>Tax & Custodial</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, vero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Who we are -->
+  <section id="who">
+    <div class="who-img">
+
+    </div>
+    <div class="who-text bg-dark p-2">
+      <h2 class="m-heading"><span class="text-primary">Who</span> We Are</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam repellendus iste aliquam quos praesentium eius dolore maxime dolores aliquid minima, amet non officiis atque dolor dolorum perferendis facere pariatur ipsam.</p>
+      <h3>Our Team</h3>
+      <ul class="list">
+        <li>Mark Smith: CEO</li>
+        <li>Shannon Jhonson: CFO</li>
+        <li>John Corbit: Lead Accountant</li>
+        <li>Janet Williams: Investment Manager</li>
+        <li>Kara Jackson: Senior Accountant</li>
+        <li>Rodiona Raskolnikov: Senior Ax Chipper</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="clients" class="py-1">
+    <div class="container">
+      <h2 class="m-heading text-center">
+        <span class="text-primary">Our</span> Clients
+      </h2>
+      <div class="items py-1">
+        <div><img src="./img/logos/logo1.png" alt="client"></div>
+        <div><img src="./img/logos/logo2.png" alt="client"></div>
+        <div><img src="./img/logos/logo3.png" alt="client"></div>
+        <div><img src="./img/logos/logo4.png" alt="client"></div>
+        <div><img src="./img/logos/logo5.png" alt="client"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">Contact Us</h2>
+      <p>Please use the form below to contact us</p>
+      <form action="process.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="form-group">
+          <label for="message">Name</label>
+          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+        </div>
+        <div class="form-group">
+        <input type="submit" value="Send" class="bg-dark">
+      </div>
+      </form>
+    </div>
+    <div class="map"></div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+    <p>Copyright &copy; 2020, EdgeLeder, All Rights Reserved</p>
+  </div>
+  </footer>
+<!-- JQuery CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Local js File -->
+  <script src="js/main.js"></script>
+
+  <!-- Google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRtB0klI4qlFmNgdTjWg2ximFnCyW_v6Y&callback=initMap"
+    async defer></script>
+  
+</body>
+</html>
