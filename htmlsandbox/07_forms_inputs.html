@@ -65,5 +65,104 @@
     <!-- <button type="submit">Submit</button> -->
     <button type="reset">Reset</button>
   </form>
+
+
+
+  <!-- Skillfactory 5section. Webinal Alexey Vidyakin -->
+
+  <header class="header">
+    <div class="container">
+      <h1 class="webinar">Вебинар</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2 class="forms">Заявка на тех.осмотр</h2>
+      <form>
+        <fieldset>
+          <legend>Пожалуйста, опишите свой автомобиль</legend>
+            Марка автомобиля <input type="text" name="trademark" placeholder="Введите марку авто"> 
+            <br>
+            <br>
+            Модель <input type="text" name="model" placeholder="Введите модель" required="required">
+
+            <p>Коробка передач</p>
+            АКП <input type="radio" name="gear" value="auto" checked>
+            МКП <input type="radio" name="gear" value="hand">
+            <br>
+            <br>
+            Необходимо проверить
+            <br>
+            <input type="checkbox" name="type1" value="bracke">Тормозная жидкость<br>
+            <input type="checkbox" name="type2" value="parallel">Развал/схождение<br>
+            <input type="checkbox" name="type3" value="coolant">Охлаждающая жидкость<br>
+            <input type="checkbox" name="type4" value="suspencion">Подвеска<br>
+            <input type="checkbox" name="type5" value="oil">Масло в двигателе<br>
+            <br>
+            Какое масло заливать?
+            <select name="oillist">
+              <option label=""></option>
+              <option label="motul">Motul</option>
+              <option label="shell">Shell</option>
+              <option label="castrol" selected>Castrol</option>
+              <option label="liquimoly">LiquiMoly</option>
+              <option label="oleina" disabled>Oleina</option>
+            </select>
+            <br>
+            <br>
+            Цвет подкраски суппортов
+            <input type="color" list="colorlist" value="#cc0000">
+            <!-- С помощь datalist можно ввести широкий круг данных: цвет, дату, текст и др. -->
+            <datalist id="colorlist">
+              <option value="#ff0000" label="красный"></option>
+              <option value="#00ff00" label="зеленый"></option>
+              <option value="#ffffff" label="белый"></option>
+              <option value="#cccccc" label="серый"></option>
+            </datalist>
+            <br>
+            Дата визита
+            <br>
+            <input type="date" name="visit" value="2021-03-11" min="2021-03-10" max="2021-05-31">
+            <br>
+            <br>
+            Ваша почта
+            <br>
+            <input type="email" name="mail">
+            <br>
+            <br>
+            Ваша телефон
+            <br>
+            <input type="tel" name="phone">
+            <br>
+            <input type="submit" name="submit" value="Get Started">
+            <br>
+            <br>
+            <input type="reset" name="reset">
+       </fieldset>
+       <p>Прогресс тех.осмотра</p>
+       <progress value="25" max="100"></progress>
+       <fieldset>
+          <legend>Обратная связь</legend>
+          Оцените качество услуг <br>
+          <input type="range" min="0" max="10" step="1" value="7"> <br>
+          Что бы хотелось улучшить <br>
+          <textarea name="comment" id="" cols="50" rows="7" placeholder="ваши предложения"></textarea>
+          <br>
+          Порекоммендуете наш сервис?
+          <label for="yes">Да</label>
+          <input type="radio" id="yes" name="choice" value="yes" checked>
+          <label for="no">Нет</label>
+          <input type="radio" id="no" name="choice" value="no">
+
+       </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-block">
+      <p class="footer-text">Skillfactory</p>
+    </div>
+  </footer>
+
 </body>
 </html>
